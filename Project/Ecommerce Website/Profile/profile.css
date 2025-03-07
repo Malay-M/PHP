@@ -1,0 +1,290 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+
+	background-color: white;
+	font-family: sans-serif;
+    background-color: #b9cfd4;
+}
+
+.navbar {
+	background-color: #5F4BB6;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.logo {
+	padding: 20px;
+}
+
+.logo a {
+	font-size: 20px;
+	color: white;
+	font-weight: 600;
+	padding: 10px;
+	border: 5px white solid;
+
+}
+
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.address {
+	width: 820px;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+
+
+.address h1 {
+	text-align: center;
+	border: none;
+	background-color: rgb(41, 172, 233);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.name {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.name label {
+	font-size: 20px;
+	padding-left: 50px;
+	margin-right: 40px;
+}
+
+.name input {
+	font-size: 20px;
+	padding: 3px;
+	margin-left: 50px;
+	width: 100%;
+}
+.lname {
+	margin-left: 10px;
+}
+
+
+.username {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.username label {
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+.username input {
+	font-size: 20px;
+	padding: 3px;
+	margin-left: 50px;
+	width: 710px;	
+}
+
+
+
+.email {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.email label {
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+.email input {
+	font-size: 20px;
+	padding: 3px;
+	margin-left: 50px;
+	width: 710px;	
+}
+
+
+.phone {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.phone label {
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+.phone input {
+	font-size: 20px;
+	padding: 3px;
+	margin-left: 50px;
+	width: 710px;	
+}
+
+
+
+.add {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.add label {
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+.add textarea {
+	font-size: 20px;
+	padding: 3px;
+	margin-left: 50px;
+	width: 710px;
+	height: 100px;
+}
+
+
+.pincode {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pincode label {
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+.pincode select {
+	margin-left: 50px;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.pincode select option {
+	margin-left: 50px;
+	font-size: 15px;
+}
+
+#pin {
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+
+
+.submit-home {
+    display: flex;
+    justify-content: space-evenly  ;
+    align-items: center;
+    padding-top: 30px;  
+}
+
+.submit {
+	text-align: center;
+
+}
+
+.submit input {
+	height: 40px;
+	width: 200px;
+	font-size: 15px;
+	background-color: rgb(0, 89, 255);
+	color: white;
+	border: 1px white solid;
+	border-radius: 10px;
+}
+
+
+.submit-home button {
+    height: 40px;
+	width: 200px;
+	font-size: 15px;
+	background-color: rgb(0, 255, 76);
+	color: white;
+	border: 1px white solid;
+	border-radius: 10px;
+ 
+}
+
+.submit-home button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.profile-pic {
+	width: 450px;
+	height: auto;
+	border: none;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-top: 40px;
+
+}
+
+
+.profile-pic h1 {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(41, 172, 233);
+	margin-left: 30px;
+}
+
+
+.profile-form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.profile img {
+	height: 300px;
+	border: 2px solid black;
+	margin: 30px;
+
+}
+
+.image-form input {
+	width: 100px;
+	height: 30px;
+	margin-left: 50px;
+}
+
+.image-form button {
+	width: 100px;
+	height: 30px;
+	margin-left: 20px;
+}
+
+#update {
+	background-color: rgb(0, 255, 76); ;
+	border: 2px solid white;
+}
+
+#remove {
+	background-color: rgba(255, 0, 0, 0.705);
+	border: 2px solid white;
+	margin: 10px;
+	margin-left: 60px;
+	color: black;
+} 
+

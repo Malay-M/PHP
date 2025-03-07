@@ -1,0 +1,705 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	
+	font-family: sans-serif;
+}
+
+.navbar {
+	background-color: #5F4BB6;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.logo {
+	padding: 20px;
+}
+
+.logo a {
+	font-size: 20px;
+	color: white;
+	font-weight: 600;
+	padding: 10px;
+	border: 5px white solid;
+
+}
+
+
+.panel {
+    background-color: #24282b;
+    color: white;
+    display: flex;
+    
+    padding: 15px;
+    font-size: 25px;
+}
+
+.menu {
+    padding-left: 30px;
+    display: flex;
+}
+
+
+
+
+.menu button {
+    background-color: #24282b;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 40px 10px 10px;
+}
+
+.options button {
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu .options {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.product:hover .product-option {
+    display: block;
+}
+
+.category:hover .category-option {
+    display: block;
+}
+
+.brand:hover .brand-option {
+    display: block;
+}
+
+.menu *:hover {
+    background-color: #1d2022;
+    cursor: pointer;
+}
+
+
+
+.logout {
+    margin: 10px;
+    
+    text-align: center; 
+}
+
+.logout a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF473A; 
+    
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout a:hover {
+    background-color: #FF6347; 
+}
+
+
+
+
+
+
+
+
+.insert_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.insert_category fieldset {
+    width: 400px; 
+    padding: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+
+.insert_category legend {
+    font-size: 25px;
+    padding: 0 10px;
+    border-bottom: 2px solid #ccc; 
+    margin-bottom: 10px;
+}
+
+.insert_category label {
+    font-size: 18px; 
+    display: block;
+    margin-bottom: 8px;
+}
+
+.insert_category input[type='text'] {
+    width: calc(100% - 20px); 
+    height: 40px;
+    padding: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+.insert_category button {
+    width: 100px; 
+    height: 40px; 
+    font-size: 18px; 
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.insert_category button:hover {
+    background-color: #0056b3; 
+}
+
+.view-category button {
+    width: 60px;
+    height: 30px;
+}
+
+
+.view-category #delete {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.view-category #delete a {
+    color: inherit;
+}
+
+
+
+
+.view-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.view-category table {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-category th, .view-category td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.view-category th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.view-category td {
+    vertical-align: middle;
+}
+
+.view-category tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.view-category #delete button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-category #delete button:hover {
+    background-color: #c82333;
+}
+
+
+
+
+.insert_brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.insert_brand fieldset {
+    width: 400px; 
+    padding: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+
+.insert_brand legend {
+    font-size: 25px;
+    padding: 0 10px;
+    border-bottom: 2px solid #ccc; 
+    margin-bottom: 10px;
+}
+
+.insert_brand label {
+    font-size: 18px; 
+    display: block;
+    margin-bottom: 8px;
+}
+
+.insert_brand input[type='text'] {
+    width: calc(100% - 20px); 
+    height: 40px;
+    padding: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+.insert_brand button {
+    width: 100px; 
+    height: 40px; 
+    font-size: 18px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.insert_brand button:hover {
+    background-color: #0056b3; 
+}
+
+
+
+
+.view-brand button {
+    width: 60px;
+    height: 30px;
+}
+
+
+
+.view-brand #delete {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.view-brand #delete a {
+    color: inherit;
+} 
+
+
+.view-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.view-brand table {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-brand th, .view-brand td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.view-brand th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.view-brand td {
+    vertical-align: middle;
+}
+
+.view-brand tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.view-brand #delete button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-brand #delete button:hover {
+    background-color: #c82333;
+}
+
+
+
+
+.insert_product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.insert_product form fieldset {
+    width: 600px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.insert_product legend {
+    font-size: 24px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.insert_product label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.insert_product input[type='text'],
+.insert_product input[type='number'],
+.insert_product select {
+    width: calc(100% - 12px);
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.insert_product input[type='file'] {
+    margin-bottom: 15px;
+}
+
+.insert_product button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.insert_product button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.view-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.view-product img {
+    height: 150px;
+    border-radius: 5px;
+}
+
+.view-product table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.view-product th {
+    background-color: #009879;
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.view-product td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.view-product tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.view-product tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+.edit-product #edit button{
+    width: 50px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.edit-product #delete button{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+.edit-product #delete a {
+    color: inherit; 
+}
+
+.edit-product #edit a {
+    color: inherit; 
+} 
+
+.edit-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.edit-product img {
+    height: 100px;
+    border-radius: 5px;
+}
+
+.edit-product table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-product th, .edit-product td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.edit-product th {
+    background-color: #009879;
+    color: white;
+    font-weight: bold;
+}
+
+.edit-product td {
+    vertical-align: middle;
+}
+
+.edit-product tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+
+.view-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-order table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-order th, .view-order td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.view-order th {
+    background-color: #009879;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.view-order td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.view-order tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.view-order select {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.view-order #update {
+    width: 80px;
+    height: 30px;
+    margin: 10px 0;
+    font-size: 14px;
+    background-color: #07c507;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-order #update:hover {
+    background-color: #059e05;
+}
+
+
+
+.view-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-payment table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-payment th, .view-payment td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.view-payment th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.view-payment td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.view-payment tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+
+.view-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-user table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-user th, .view-user td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.view-user th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.view-user td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.view-user tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.view-user #profile {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    background-color: rgb(7, 197, 7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-user #profile:hover {
+    background-color: rgb(0, 158, 0);
+}
+
+

@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #86A5D9;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #5F4BB6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo a {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border: 5px white solid;
+}
+
+.options ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.options ul li {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.options ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.login button {
+    background-color: black;
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.login button a {
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    padding: 50px;
+    flex: 1;
+}
+
+.text h3 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: green;
+}
+
+.text p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: lightyellow;
+}
+
+.text button {
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.text button a {
+    font-size: 20px;
+    color: white;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    background-color: #111;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.footerNav ul li a:hover {
+    text-decoration: underline;
+}
+
+.footerBottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #5F4BB6;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -50px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn.active {
+    background-color: #5F4BB6;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.user-pic img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.show-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.logout {
+    margin: 10px;
+    border-top: 2px solid black;
+}
+
+.option {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .options ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .options ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .text {
+        padding: 20px;
+    }
+
+    .text h3 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .text button {
+        padding: 8px;
+    }
+
+    .text button a {
+        font-size: 18px;
+    }
+
+    .footerNav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerNav ul li a {
+        margin: 10px;
+    }
+}
